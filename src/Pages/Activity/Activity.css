@@ -1,0 +1,22 @@
+.activity{
+    width: 250px;
+    margin: 10px auto;
+    position: relative;
+}
+
+.activity img{
+    width: 250px;
+    position: relative;
+    border-radius: 12px;
+}
+
+.text{
+    position: absolute;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    left: 0;
+    bottom: 5px;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+}

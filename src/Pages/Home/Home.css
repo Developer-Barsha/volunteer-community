@@ -4,10 +4,10 @@
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 80px;
-    background-position-y: -55px;
+    background-position-y: -65px;
 }
 
-.home h1{
+.home >h1{
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 20px;
@@ -16,6 +16,7 @@
 .input-btn{
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 .input-btn input{
