@@ -1,0 +1,48 @@
+.add-activity{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    min-height: 60vh;
+}
+
+form{
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+form input:not([type=submit]){
+    width: 100%;
+    height: 35px;
+    font-size: 18px;
+    padding: 0 5px;
+    border-radius: 5px;
+    outline: 0;
+    border: 1px solid #555;
+}
+
+form input:focus{
+    border: 1px solid #3F90FC;
+}
+
+form input[type=submit]{
+    width: 102%;
+    padding: 5px 25px;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: #3F90FC;
+    color: white;
+    border: 0;
+}
+
+form input[type=submit]:hover {
+    background-color: #3f91fcbb;
+    color: white;
+}

@@ -41,3 +41,7 @@
     border: 0;
     border-radius: 0 5px 5px 0;
 }
+
+.input-btn button:hover {
+    background-color: #6aa6f5;
+}

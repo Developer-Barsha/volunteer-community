@@ -2,6 +2,13 @@
     width: 250px;
     margin: 10px auto;
     position: relative;
+    border-radius: 12px;
+}
+
+.activity:hover{
+    box-shadow: 2px 2px 20px 5px #888;
+    transform: scale(0.98);
+    transition: 0.2s;
 }
 
 .activity img{
@@ -12,11 +19,12 @@
 
 .text{
     position: absolute;
-    height: 50px;
+    height: 60px;
     display: flex;
     align-items: center;
+    justify-content: center;
     left: 0;
-    bottom: 5px;
+    bottom: 0px;
     width: 100%;
     border-radius: 0 0 10px 10px;
 }
