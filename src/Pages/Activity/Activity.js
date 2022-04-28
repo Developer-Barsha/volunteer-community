@@ -10,7 +10,7 @@ const Activity = ({ activity }) => {
             <img src={activity.image} alt="" />
 
             <div className="text" style={{ backgroundColor: color}}>
-                <h3 style={{textTransform:"capitalize", paddingLeft:'10px'}}>{activity.name}</h3>
+                <h3 style={{textTransform:"capitalize", textAlign:'center'}}>{activity.name}</h3>
             </div>
         </div>
     );

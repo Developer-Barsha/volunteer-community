@@ -29,7 +29,7 @@ const Header = () => {
                         <CustomLink to={'/about'}>Donation</CustomLink>
                         <CustomLink to={'/addactivity'}>Add activity</CustomLink>
                         <CustomLink to={'/add'}>Blogs</CustomLink>
-                        <button>Register</button>
+                        <button onClick={()=>navigate('/register')}>Register</button>
                         <button>Admin</button>
                     </nav>
                 </div>
@@ -40,7 +40,7 @@ const Header = () => {
                 <CustomLink to={'/about'}>Donation</CustomLink>
                         <CustomLink to={'/addactivity'}>Add activity</CustomLink>
                 <CustomLink to={'/add'}>Blogs</CustomLink>
-                <button>Register</button>
+                <button onClick={()=>navigate('/register')}>Register</button>
                 <button>Admin</button>
             </nav>
         </header>

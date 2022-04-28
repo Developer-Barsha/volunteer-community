@@ -46,3 +46,9 @@ form input[type=submit]:hover {
     background-color: #3f91fcbb;
     color: white;
 }
+
+@media only screen and (max-width:879px){
+    .add-activity{
+        width: 80%;
+    }
+}
