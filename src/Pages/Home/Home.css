@@ -1,9 +1,9 @@
 .home{
-    min-height: 300px;
+    min-height: 230px;
     background-image: url('https://i.ibb.co/YPCBKMP/volunteers-750x421.png');
     background-size: cover;
     background-repeat: no-repeat;
-    padding-top: 80px;
+    padding-top: 60px;
     background-position-y: -65px;
 }
 

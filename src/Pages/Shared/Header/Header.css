@@ -42,11 +42,58 @@ nav button:nth-child(6) {
     color: white;
 }
 
+nav button:nth-child(5):hover {
+    background-color: #3f91fcbb;
+    color: white;
+}
+
+nav button:nth-child(6):hover {
+    background-color: rgba(0, 0, 0, 0.772);
+    color: white;
+}
+
+.sm-icon,
+.sm-menu {
+    display: none;
+}
+
+.sm-icon img {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+.sm-menu nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    flex-direction: column;
+    top: 80px;
+    right: 20px;
+    z-index: 1000;
+    background-color: #3F90FC;
+    padding: 10px 5px;
+}
 
 @media only screen and (max-width:700px) {
     header {
         padding: 10px 30px;
         align-items: center;
         background-image: none;
+        position: relative;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .sm-icon,
+    .sm-menu {
+        display: block;
     }
 }
