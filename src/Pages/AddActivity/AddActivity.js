@@ -24,8 +24,8 @@ const AddActivity = () => {
         <div className='add-activity'>
             <h2>Add A New Volunteer Activity</h2>
             <form onSubmit={handleAddActivity}>
-                <input type="text" name='name' placeholder='Activity Name'/>
-                <input type="text" name='image' placeholder='Activity Image'/>
+                <input type="text" name='name' placeholder='Activity Name' required/>
+                <input type="text" name='image' placeholder='Activity Image' required/>
                 <input type="submit" value="Add New Activity" />
             </form>
         </div>

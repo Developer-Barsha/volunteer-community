@@ -1,5 +1,8 @@
+import { signOut } from 'firebase/auth';
 import React, { useState } from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { useNavigate } from 'react-router-dom';
+import auth from '../../../firebase.init';
 import logo from '../../../logos/Group 1329.png';
 import CustomLink from '../CustomLink/CustomLink';
 import './Header.css'
@@ -7,6 +10,7 @@ import './Header.css'
 const Header = () => {
     const [display, setDisplay] = useState(false);
     const navigate = useNavigate();
+    const [user] = useAuthState(auth);
 
     return (
         <header>
@@ -29,7 +33,12 @@ const Header = () => {
                         <CustomLink to={'/about'}>Donation</CustomLink>
                         <CustomLink to={'/addactivity'}>Add activity</CustomLink>
                         <CustomLink to={'/add'}>Blogs</CustomLink>
-                        <button onClick={()=>navigate('/register')}>Register</button>
+                        {
+                            user ?
+                            <button onClick={()=>signOut(auth)}>Sign Out</button>
+                            :
+                            <button onClick={()=>navigate('/register')}>Register</button> 
+                        }
                         <button>Admin</button>
                     </nav>
                 </div>
@@ -40,7 +49,12 @@ const Header = () => {
                 <CustomLink to={'/about'}>Donation</CustomLink>
                         <CustomLink to={'/addactivity'}>Add activity</CustomLink>
                 <CustomLink to={'/add'}>Blogs</CustomLink>
-                <button onClick={()=>navigate('/register')}>Register</button>
+                {
+                    user ?
+                    <button onClick={()=>signOut(auth)}>Sign Out</button>
+                    :
+                    <button onClick={()=>navigate('/register')}>Register</button> 
+                }
                 <button>Admin</button>
             </nav>
         </header>
